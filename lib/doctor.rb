@@ -24,7 +24,7 @@ class Doctor
 
   def patients
       self.appointments.map do |apt|
-        apt
+        apt.date
       end
     end
 
