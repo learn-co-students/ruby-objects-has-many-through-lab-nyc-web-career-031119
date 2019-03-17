@@ -20,9 +20,8 @@ class Genre
   end
 
   def artists
-    Song.all.each do |song|
-      puts song.first
-      # song.artist == self.artist
+    songs.map do |song|
+      song.artist
     end
   end
 end
